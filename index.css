@@ -1,0 +1,112 @@
+/* *{background-color: rgb(218, 218, 219);} */
+
+
+
+/* media */
+
+
+.continor {
+    height: 50vw;
+    width: 100%;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    justify-items: stretch;
+
+}
+
+.maintext {
+    position: absolute;
+    left: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.maintext p {
+    font-size: 35px;
+    width: 700px;
+    font-weight: 10px;
+    position: relative;
+    top: -45px;
+
+}
+
+.maintext h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(76, 76, 255);
+    position: relative;
+
+}
+.line{
+    width: 300px;
+    height: 1px;
+    border: 1px solid rgb(236, 233, 233);
+    background-color: rgb(236, 230, 230);
+    
+}
+.mainbox {
+    width: 400px;
+    height: 350px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    /* padding-top: 10px; */
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: -1px 6px 16px 5px #47434347;
+    margin-right: 70px;
+    
+}
+
+.mainbox input {
+    padding: 15px 10px;
+    width: 282px;
+    border-radius: 5px;
+    border: 2px groove rgba(209, 209, 209, 0.733);
+
+}
+.create{
+    width: 180px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 10px;
+    background-color: rgb(12, 207, 6);
+}
+.create a{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.login {
+    padding: 10px;
+    width: 308px;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(233, 232, 230);
+}
+
+.login a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.forgot {
+    text-decoration: none;
+}
+
+.login {
+    background-color: rgba(23, 26, 236, 0.747);
+    border: none;
+    border-radius: 8px;
+}
