@@ -1,110 +1,166 @@
-/* *{background-color: rgb(218, 218, 219);} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-
-
-/* media */
-
-
-.continor {
-    height: 50vw;
-    width: 100%;
-    display: grid;
-    justify-content: end;
-    align-items: center;
-    justify-items: stretch;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.maintext {
-    position: absolute;
-    left: 100px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+.flex {
+  display: flex;
+  align-items: center;
 }
 
-.maintext p {
-    font-size: 35px;
-    width: 700px;
-    font-weight: 10px;
-    position: relative;
-    top: -45px;
-
+.container {
+  padding: 0 15px;
+  min-height: 100vh;
+  justify-content: center;
+  background: #f0f2f5;
 }
 
-.maintext h1 {
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(76, 76, 255);
-    position: relative;
+.facebook-page {
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
 
+.facebook-page .text {
+  margin-bottom: 90px;
 }
-.line{
-    width: 300px;
-    height: 1px;
-    border: 1px solid rgb(236, 233, 233);
-    background-color: rgb(236, 230, 230);
-    
+
+.facebook-page h1 {
+  color: #1877f2;
+  font-size: 4rem;
+  margin-bottom: 10px;
 }
-.mainbox {
-    width: 400px;
-    height: 350px;
-    /* border: 2px solid black; */
-    display: flex;
-    flex-wrap: wrap;
+
+.facebook-page p {
+  font-size: 1.75rem;
+  white-space: nowrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+form input {
+  height: 55px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding: 0 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+::placeholder {
+  color: #777;
+  font-size: 1.063rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.link .login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #1877f2;
+  padding: 15px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.link .login:hover {
+  background: #0d65d9;
+}
+
+form a {
+  text-decoration: none;
+}
+
+.link .forgot {
+  color: #1877f2;
+  font-size: 0.875rem;
+}
+
+.link .forgot:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button a {
+  padding: 15px 20px;
+  background: #42b72a;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.button a:hover {
+  background: #3ba626;
+}
+
+@media (max-width: 900px) {
+  .facebook-page {
     flex-direction: column;
-    row-gap: 10px;
-    align-items: center;
-    /* padding-top: 10px; */
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: -1px 6px 16px 5px #47434347;
-    margin-right: 70px;
-    
+    text-align: center;
+  }
+
+  .facebook-page .text {
+    margin-bottom: 30px;
+  }
 }
 
-.mainbox input {
-    padding: 15px 10px;
-    width: 282px;
-    border-radius: 5px;
-    border: 2px groove rgba(209, 209, 209, 0.733);
+@media (max-width: 460px) {
+  .facebook-page h1 {
+    font-size: 3.5rem;
+  }
 
-}
-.create{
-    width: 180px;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 10px;
-    background-color: rgb(12, 207, 6);
-}
-.create a{
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-.login {
-    padding: 10px;
-    width: 308px;
-    cursor: pointer;
-}
+  .facebook-page p {
+    font-size: 1.3rem;
+  }
 
-body {
-    background-color: rgb(233, 232, 230);
+  form {
+    padding: 15px;
+  }
 }
-
-.login a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.forgot {
-    text-decoration: none;
-}
-
 .login {
     background-color: rgba(23, 26, 236, 0.747);
     border: none;
